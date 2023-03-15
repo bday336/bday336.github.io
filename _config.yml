@@ -8,30 +8,29 @@ plugins: [jekyll-paginate]
 port: 4000
 safe: true
 description: > # this means to ignore newlines until "baseurl:"
-  Danielle Skinner - Graduate research assistant for Dr. John Wise 
-  in the Center for Relativistic Astrophysics at the Georgia
-  Institute of Technology. 
+  Brian Day - Graduate research assistant for Dr. Elisabetta Matsumoto 
+  at the Georgia Institute of Technology. 
 # edit this section with your information
 # biomadeira.github.io - all contents run on /vitae/
 # for a normal use at the base of the server change it to "/"
-url: http://drenniks.github.io/
+url: http://bday336.github.io/
 baseurl: "/"
-title: Danielle Skinner
-name: Danielle Skinner
-email: drenniks@gatech.edu
-email_full: mailto:drenniks@gatech.edu
-website: drenniks.github.io
-website_full: https://drenniks.github.io
-github: drenniks
-twitter: drenniks
-google_maps: 'https://www.google.com/maps/place/Gilbert+Hillhouse+Boggs+Building/@33.7757655,-84.4019365,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5048963bf0de9:0xb9a8c30e4aaf1178!8m2!3d33.7757611!4d-84.3997425'
-address:
-  building: Center for Relativistic Astrophysics
-  street: 770 State St. NW
-  postcode: 30313
-  city: Atlanta, GA
-  country: USA
-google_analytics: UA-122314908-1
+title: Brian Day
+name: Brian Day
+email: brian.day7855@gmail.com
+email_full: mailto:brian.day7855@gmail.com
+website: bday336.github.io
+website_full: https://bday336.github.io
+github: bday336
+# twitter: drenniks
+# google_maps: 'https://www.google.com/maps/place/Gilbert+Hillhouse+Boggs+Building/@33.7757655,-84.4019365,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5048963bf0de9:0xb9a8c30e4aaf1178!8m2!3d33.7757611!4d-84.3997425'
+# address:
+#   building: Gilbert Hillhouse Boggs Building
+#   street: 770 State St. NW
+#   postcode: 30313
+#   city: Atlanta, GA
+#   country: USA
+# google_analytics: UA-122314908-1
 
 # needed for travis-ci build
 exclude: [vendor]
