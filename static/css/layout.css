@@ -180,3 +180,7 @@ th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+figure figcaption {
+    text-align: center;
+}
