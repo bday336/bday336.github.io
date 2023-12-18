@@ -13,11 +13,36 @@
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </script>
   <h1>Current Research Projects</h1>
+
+  Over the course of my PhD work, my research has largely been centered around investigating how curvature facilitates interactions between dynamical systems and their surroundings. This can take the form of an extended body system evolving in an ambient space with instrinsic curvature, for example an extended body performing some dynamics on the surface of a sphere. Alternatively, more abstract notions of curvature help to describe the relationship between internal deformation and external changes for deformable control systems.
+
+  <h3> Generic Curved Space Dynamics Solver </h3>
+
+  This project developed out of wanting to not just visualize curved spaces in virtual reality (VR), but to properly simulate physics in such spaces as well. The visualization element has been a developed through the work of my advisor Dr. Elisabetta Matsumoto and collaborators for the 3-dimensional Thurston geometries as described in the publication <a href="https://univ-rennes2.hal.science/hal-02983618v1"><font color="#0000ff"></font>"Ray-marching Thurston Geometries"</font></a>.
+
+  Working with my collaborator Steve Trettel and my advisor, we developed a theoretical framework that can be used to describe extended body systems that live in generic curved spaces and the associated equations characterizing their dynamical evolution. This theoretical framework was translated into numerical source code for a dynamics solver that is able to describe the dynamics of extended bodies in such curved spaces. In particular, three key features we wanted to make sure to include is the ability of the dynamics solver to handle internal potentials within an object, rigidity constraints, and collisions.
+
+  The solver is being developed such that the user only needs to provide minimal information to run the simulation. They must provide information about the geometry of the ambient curved space (metric, Christoffel symbols, distance function) and information about the system being simulated (discrete representation of extended body system). We are in the process of generating an article for publication for this project.
+
+
+  <h3> Numerical Optimization Toolkit for Deformable Control Systems Characterized via Fiber Bundle </h3>
+
+  This project developed from realizing that the dynamics of extended body systems in spaces with ambient curvature, in general, results in deformation of the system. For systems simulated via the above dynamics solver, this deformation is due to curvature effects on the individual components of the extended body. Naturally, one might wonder if this works in reverse, i.e. can controlled body deformation generate some dynamics for the system and if so is there an associated notion of curvature.
+
+  The answer to the first question is an obvious yes since we all actively deform our bodies to generate dynamics be it using a pen to write or using our legs to move around. The second question is more subtle, but it turns out to be a fundemental point of study in the field of geometric mechanics. Here systems with internal controls can be described through fiber bundles where internal body deformations are related to external changes to the system via an abstract notion of curvature between dynamical paths in the configuration space of the system.
+
+  The dynamics of the system in terms of this fiber bundle structure has allowed for the development of a variational approach to asking questions regarding how best to optimally control a deformable control system. By this we mean what sequence of body deformations of the body accomplish some task while optimizing a given cost function.
+
+  This process can be used for a while range of deformable control systems in robotics and biomechanics, and in particular it is able to handle systems described by non-abelian symmetry groups which makes other optimization schemes, such as gradient descent, much more difficult to impliment accurately.
+
+  The numerical toolkit is being designed such that the user only needs to provide minimal information to probe for optimal control trajectories. They must provide the cost function (in regards to a quadratic form acting as a metric on control space of the system) and the velocity constraints characterizing the relationship between internal deformations and external changes of the system. We are in the process of generating an article for publication for this project.
+
   
-  My research has revolved around investigating the oddities that arise when solving dynamics in spaces with instrinsic curvature. The presence of curvature results in geometric effects that challenge our everday intuition of how things move and interact. While these spaces are largely mathematical in nature, I feel that studying how systems evolution in such spaces can lead to a deeper insight of dynamics in flat space or at the very least allow one to think about dynamics from a different perspective in general.
+  
+<!--   My research has revolved around investigating the oddities that arise when solving dynamics in spaces with instrinsic curvature. The presence of curvature results in geometric effects that challenge our everday intuition of how things move and interact. While these spaces are largely mathematical in nature, I feel that studying how systems evolution in such spaces can lead to a deeper insight of dynamics in flat space or at the very least allow one to think about dynamics from a different perspective in general. -->
   <br> 
   <br>
-  Through computer simulations, my collaborator and I have been working on developing a physics engine designed to solve dynamics in arbitrary curved spaces. This is in pursuit of being able to better visualize and model deformable systems with internal controls in curved space. These systems can span from simple swimmers on the surface of a sphere or sword fighting octopuses in hyperbolic space. I am not only intereseted in the computational aspect of setting up and running the simulations, but also theoretically deriving the dynamical equations mathematical.
+<!--   Through computer simulations, my collaborator and I have been working on developing a physics engine designed to solve dynamics in arbitrary curved spaces. This is in pursuit of being able to better visualize and model deformable systems with internal controls in curved space. These systems can span from simple swimmers on the surface of a sphere or sword fighting octopuses in hyperbolic space. I am not only intereseted in the computational aspect of setting up and running the simulations, but also theoretically deriving the dynamical equations mathematical. -->
 
   <br> 
   <br>
